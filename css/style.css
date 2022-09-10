@@ -677,6 +677,7 @@ progress {
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 
+/* About section */
 @media (min-width:1200px){
   .row-about {
     display: flex;
@@ -701,11 +702,20 @@ progress {
     margin:auto;
   }
 }
-
-.about-text {
-  margin:auto;
-  overflow: hidden;
+@media (min-width:1200px){
+  .about-text {
+    margin:auto;
+    overflow: hidden;
+  }
 }
+@media (max-width:1200px){
+  .about-text {
+    padding-top: 30px;
+    margin:auto;
+    overflow: hidden;
+  }
+}
+
 .row-footer {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
